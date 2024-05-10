@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html {
+    background-image: url(../images/fondovertorial.jpg);
+    background-blend-mode: multiply;
+}
+
+/* ---------------------------estilo de logo, cualquier cosa podemos mejorarla---------------------------- */
+.principio_entrada {
+    font-size: 100px;
+    margin-top: 10vh;
+    text-align: center;
+    color: rgb(253, 0, 0);
+    text-shadow: 2px 0 orange;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.logo_entrada {
+    background-blend-mode: multiply;
+    margin-top: 15vh;
+    display: inline-block;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.logo_img {
+    box-shadow: 0 0 100px rgb(233, 170, 76);
+    /* Sombras de caja */
+    border-radius: 20%;
+}
+
+.logo_img:hover {
+    scale: 1.1;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
