@@ -10,37 +10,12 @@ html {
     background-blend-mode: multiply;
 }
 
-/* ---------------------------estilo de logo, cualquier cosa podemos mejorarla---------------------------- */
+
 .principio_entrada {
     font-size: 8vh;
     text-align: center;
     color: rgb(255, 255, 255);
     margin-left:2vw;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-}
-
-.logo_entrada {
-    background-blend-mode: multiply;
-    margin-top: 15vh;
-    display: inline-block;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-}
-
-.logo_img {
-    box-shadow: 0 0 100px rgb(233, 170, 76);
-    border-radius: 20%;
-}
-
-.logo_img:hover {
-    scale: 1.1;
 }
 
 .footer {
@@ -56,7 +31,7 @@ html {
     color: rgb(230, 230, 230);
 }
 
-/* -------------------------------------------------------------------------------------------------------- */
+
 header {
     display: flex; 
     justify-content: space-between; 
