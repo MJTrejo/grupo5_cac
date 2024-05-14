@@ -30,13 +30,85 @@
     </header>
 
     <main class="main">
-        <!-- Contenido -->
+        <form action="#" method="post" onsubmit="return validarCampos(); ">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" ><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" ><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" ><br>
+            <label for="telefono" >Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono" ><br>
+            <div class="consulta">
+                <h5>Tipo de consulta</h5><br>
+                <div class="checks">
+                    <div><input type="radio" name="consulta" value="consulta">Consulta</div>
+                    <div><input type="radio" name="consulta" value="compra" checked>Compra</div>
+                </div>               
+            </div>
+            <input type="submit" value="Enviar"><br>
+          </form>
     </main>
 
     <footer class="footer">
         <p>&copy; 2024 CaC grupo 5. Todos los derechos reservados.</p>
     </footer>
-
+    <script src="../script.js"></script>
 </body>
 
 </html>
+<!-- CSS
+form{
+    background-color: rgba(255, 0, 0, 0.55);
+    text-align: justify;
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 40px; 
+    color: white;
+    font-size: 3vh;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.consulta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.consulta input[type="radio"] {
+    margin-right: 10px;
+ }
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+    JS
+
+function validarCampos(){
+    var nombre = document.getElementById('nombre').value;
+    var apellido = document.getElementById('apellido').value;
+    var email = document.getElementById('email').value;
+    var telefono = document.getElementById('telefono').value;
+    // Operador ternario que verifica si el teléfono tiene 10 caracteres
+    var esValido = telefono.length === 10 ? true : false;
+
+    if (!nombre || !apellido || !email || !telefono) {
+        
+        alert('Por favor, completa todos los campos.');
+    }else if (!esValido) {
+        console.log("hola")
+        alert('Teléfono inválido');
+    }
+    return esValido;
+
+};    
+-->
