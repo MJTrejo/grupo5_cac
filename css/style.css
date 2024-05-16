@@ -339,3 +339,41 @@ h2 {
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* ------------------------------Estilo Formulario-------------------------------- */
+
+form{
+    background-color: rgba(255, 0, 0, 0.55);
+    text-align: justify;
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 40px; 
+    color: white;
+    font-size: 3vh;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.consulta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.consulta input[type="radio"] {
+    margin-right: 10px;
+ }
+input[type="submit"] {
+    margin-top: 20px;
+}
+
+/* ------------------------------Fin de Estilo Formulario-------------------------------- */
+
