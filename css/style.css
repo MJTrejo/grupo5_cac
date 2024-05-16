@@ -1,3 +1,4 @@
+/* =========== Configuración general =========== */
 * {
     margin: 0;
     padding: 0;
@@ -12,84 +13,136 @@ html {
     background-image: url(../images/fondovertorial.jpg);
 }
 
+/* ======== Fin de configuración general ======== */
 
-.principio_entrada {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 5vh;
-    text-align: center;
-    color: rgb(212, 135, 48);
-    margin-left: 2vw;
-}
+/* ================ Header ================ */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(172, 32, 32, 0.459);
-    height: 10vh;
-    text-align: center;
-    /* Centrar el texto dentro del footer */
-}
-
-.footer p {
-    color: rgb(230, 230, 230);
-}
-
-
-header {
+.header {
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(122, 37, 38, 0.432);
+    background-color: rgba(122, 37, 38, 0.5);
     height: 10vh;
 }
 
-
-.lleva_inicio {
-    order: -1;
-    /* original: 1 */
+.header nav {
+    margin-right: 1vw;
 }
 
-.boton_navegacion {
-    order: 1;
-    /* original: 1 */
+.logo_titulo {
+    display: flex;
+    align-items: center;
 }
 
-.nav {
-    border: 5px solid white;
-
+.logo_titulo img {
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
+
+.logo_titulo h1 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 4vh;
+    text-align: left;
+    color: rgb(212, 135, 48);
+}
+
+/* ============= Fin de header ============= */
+
+/* ============ Botones de navegación ============ */
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
     text-align: center;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-left: 2vh;
-}
-
-nav ul li:last-child {
-    margin-right: 2vh;
+    flex: 1;
+    margin: 5px 5px;
+    position: relative;
 }
 
 nav ul li a {
+    display: block;
     font-size: 3vh;
-    display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
     background-color: rgb(180, 27, 27);
     cursor: pointer;
     border-radius: 8%;
+    text-align: center;
 }
 
 nav ul li a:hover {
-    background-color: rgba(247, 111, 32, 0.4);
+    background-color: rgb(189, 77, 12);
 }
+
+/* Submenú con más opciones */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(180, 27, 27);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 8%;
+}
+
+.submenu li {
+    margin: 0;
+    border-bottom: 2px solid rgb(101, 31, 31);
+}
+
+.submenu li:last-child {
+    border-bottom: none;
+}
+
+.submenu li a {
+    font-size: 2.5vh;
+    padding: 10px 20px;
+}
+
+.submenu li a:hover {
+    background-color: rgb(189, 77, 12);
+}
+
+nav ul li:hover .submenu {
+    display: block;
+}
+
+/* ========= Fin de botones de navegación ========= */
+
+/* ================ Main ================ */
+
+.main{
+    height: 80vh;
+}
+
+/* ============= Fin de main ============= */
+
+/* ================ Footer ================ */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(172, 32, 32, 0.5);
+    height: 10vh;
+    text-align: center;
+}
+
+.footer p {
+    color: rgb(230, 230, 230);
+}
+
+/* ============= Fin de footer ============= */
 
 .historia_marvel {
     background-color: rgba(255, 0, 0, 0.55);
