@@ -7,9 +7,9 @@
 // }
 
 class Producto {
-    constructor(nombre, características, precio) {
+    constructor(nombre, caracteristicas, precio) {
         this.nombre = nombre;
-        this.características = características;
+        this.caracteristicas = caracteristicas;
         this.precio = precio;
     }
 }

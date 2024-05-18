@@ -4,15 +4,15 @@
  * fecha: 11/05/2024
  */
 
-function Producto(nombre, características, precio) {
+function Producto(nombre, caracteristicas, precio) {
     this.nombre = nombre;
-    this.características = características;
+    this.caracteristicas = caracteristicas;
     this.precio = precio;
 
 
     this.obtenerFoto = function () {
         document.write('<div class="container_producto">');
-        document.write(`<img src="../assets/${this.nombre.toLowerCase()}.png" alt="${this.nombre}">`);
+        document.write(`<img src="../assets/images/${this.nombre.toLowerCase()}.png" alt="${this.nombre}">`);
     }
 
     this.obtenerNombre = function () {
@@ -20,7 +20,7 @@ function Producto(nombre, características, precio) {
     }
 
     this.obtenerCaracterísticas = function () {
-        document.write(`<p>Características: ${this.características}</p>`);
+        document.write(`<p>Características: ${this.caracteristicas}</p>`);
     }
 
     this.obtenerPrecio = function () {
