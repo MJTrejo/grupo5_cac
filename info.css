@@ -1,0 +1,113 @@
+/* Estilos para info */
+.main-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.main-info h2{
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-info p{
+    color: rgb(208, 208, 208);
+    text-align: justify;
+}
+
+.sobre-nos{
+    background-color: rgba(255, 0, 0, 0.55);
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.quienes-somos{
+    background-color: rgba(255, 0, 0, 0.55);
+    width: 60vw;
+    padding: 30px;
+    border-radius: 20px;
+
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjeta{
+    height: 250px;
+    width: 230px;
+    background: rgb(35, 35, 35);
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .tarjeta img{
+    width: 100px;
+    z-index: 1;
+  }
+
+  .tarjeta h3{
+    color: azure;
+    z-index: 1;
+  }
+
+  .tarjeta p{
+    color: rgb(165, 165, 165);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .tarjeta a{
+    text-decoration: none;
+    z-index: 2;
+  }
+
+  .linkedin{
+    color: rgb(66, 66, 184);
+  }
+
+  .github{
+    color: rgb(219, 162, 54);
+  }
+
+  .tarjeta::before{
+    position: absolute;
+    content: '';
+    height: 200%;
+    width: 50%;
+    rotate: 45deg;
+    background: tomato;
+    border-radius: 15px;
+  }
+
+  .tarjeta:hover::before{
+    animation: rotar 2.5s linear infinite;
+  }
+
+  @keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+  .tarjeta::after{
+    position: absolute;
+    content: '';
+    inset: 3px;
+    background: rgb(35, 35, 35);
+    border-radius: 10px;
+  }

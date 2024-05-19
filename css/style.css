@@ -173,11 +173,10 @@ nav ul li:hover .submenu {
 
 .info_heroe {
     border-radius: 5px;
-    background-color: rgb(199, 19, 13);
+    background-color: rgb(47, 47, 47);
     max-width: 240px;
-    padding: 8px;
-    border: 1px solid rgb(95, 10, 10);
-    box-shadow: 0 0 5px #4e0803;
+    padding: 10px;
+    box-shadow: 0 0 8px #320401;
 }
 
 .info_heroe img {
@@ -266,9 +265,9 @@ h2 {
     border-radius: 30px;
 }
 
-/* --------------------------------------fin de estilo de producto------------------------------------------------ */
+/* =========== Fin de productos =========== */
 
-/* ------------------------------Estilo Pelicula-------------------------------- */
+/* ============== Películas ============== */
 
 .logo_marvel1 {
     margin-top: 30px;
@@ -423,7 +422,9 @@ h2 {
     cursor: pointer;
 }
 
-/* ------------------------------Estilo Formulario-------------------------------- */
+/* =========== Fin de películas =========== */
+
+/* ========= Formulario de contacto ========= */
 
 form{
     background-color: rgba(255, 0, 0, 0.55);
@@ -458,5 +459,136 @@ input[type="submit"] {
     margin-top: 20px;
 }
 
-/* ------------------------------Fin de Estilo Formulario-------------------------------- */
+/* ====== Fin de formulario de contacto ====== */
 
+/* ============ Sobre nosotros ============= */
+
+.main-info h2{
+    color: rgb(255, 255, 255); 
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main-info p{
+    color: rgb(208, 208, 208);
+    text-align: justify;
+}
+
+.sobre-nos{
+    background-color: rgba(255, 0, 0, 0.55);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 30px;
+    color: white;
+    font-size: 3vh;
+    border-radius: 30px;
+}
+
+.quienes-somos{
+    background-color: rgba(255, 0, 0, 0.55);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 30px;
+    color: white;
+    font-size: 3vh;
+    border-radius: 20px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjeta{
+    max-width: 240px;
+    background: rgb(47, 47, 47);
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 8px #320401;
+}
+
+.tarjeta img{
+    max-width: 200px;
+    z-index: 1;
+}
+
+.tarjeta h3{
+    font-size: 20px;
+    color: azure;
+    z-index: 1;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tarjeta p{
+    color: rgb(165, 165, 165);
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tarjeta a{
+    text-decoration: none;
+    z-index: 2;
+}
+
+.linkedin{
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: rgb(66, 66, 184);
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 2px solid rgb(28, 28, 90);
+}
+
+.github{
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: rgb(219, 162, 54);
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 2px solid rgb(114, 84, 27);
+}
+
+.tarjeta::before{
+    position: absolute;
+    content: '';
+    height: 200%;
+    width: 50%;
+    rotate: 45deg;
+    background: tomato;
+    border-radius: 15px;
+}
+
+.tarjeta:hover::before{
+    animation: rotar 2.5s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.tarjeta::after{
+    position: absolute;
+    content: '';
+    inset: 3px;
+    background: rgb(35, 35, 35);
+    border-radius: 10px;
+}
+
+/* ========= Fin de sobre nosotros ========== */
