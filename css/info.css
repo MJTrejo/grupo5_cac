@@ -1,0 +1,142 @@
+/* ============= Acerca del archivo ============= */
+/*
+>   Autores: integrantes del grupo 5 del curso Codo a Codo
+>   Versión: 1
+>   Fecha: 20-05-2024
+>   El siguiente código almacena los estilos que tendrá la página
+    info.html
+*/
+
+/* ================ Imagen de fondo ================ */
+
+html{
+    background-image: url(../assets/images/fondovertorial.jpg);
+}
+
+/* ============ Fin de Imagen de fondo ============ */
+
+.main-info h2{
+    color: rgb(240, 240, 240); 
+    text-align: center;
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main-info p{
+    color: rgb(208, 208, 208);
+    text-align: justify;
+}
+
+.sobre-nos{
+    background-color: rgba(255, 0, 0, 0.55);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 30px;
+    color: white;
+    font-size: 3vh;
+    border-radius: 30px;
+}
+
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjeta{
+    max-width: 240px;
+    background: rgb(47, 47, 47);
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 0 8px #320401;
+}
+
+.tarjeta img{
+    max-width: 200px;
+    z-index: 1;
+}
+
+.tarjeta h3{
+    font-size: 20px;
+    color: azure;
+    z-index: 1;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.tarjeta p{
+    color: rgb(165, 165, 165);
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+}
+
+.tarjeta a{
+    text-decoration: none;
+    z-index: 2;
+}
+
+.linkedin{
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: rgb(66, 66, 184);
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 2px solid rgb(28, 28, 90);
+}
+
+.linkedin:hover{
+    background-color: rgb(105, 105, 225);
+}
+
+
+.github{
+    margin: 5px;
+    padding: 5px 15px;
+    background-color: rgb(219, 162, 54);
+    color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 2px solid rgb(114, 84, 27);
+}
+
+.github:hover{
+    background-color: rgb(250, 189, 77);
+}
+
+.tarjeta::before{
+    position: absolute;
+    content: '';
+    height: 200%;
+    width: 50%;
+    rotate: 45deg;
+    background: tomato;
+    border-radius: 15px;
+}
+
+.tarjeta:hover::before{
+    animation: rotar 2.5s linear infinite;
+}
+
+@keyframes rotar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.tarjeta::after{
+    position: absolute;
+    content: '';
+    inset: 3px;
+    background: rgb(35, 35, 35);
+    border-radius: 10px;
+}

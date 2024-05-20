@@ -1,0 +1,49 @@
+/* ============= Acerca del archivo ============= */
+/*
+>   Autores: integrantes del grupo 5 del curso Codo a Codo
+>   Versión: 1
+>   Fecha: 20-05-2024
+>   El siguiente código almacena los estilos que tendrá la página
+    contacto.html
+*/
+
+/* ================ Imagen de fondo ================ */
+
+html{
+    background-image: url(../assets/images/fondovertorial.jpg);
+}
+
+/* ============ Fin de Imagen de fondo ============ */
+
+form{
+    background-color: rgba(255, 0, 0, 0.55);
+    text-align: justify;
+    max-width: 800px; 
+    margin: 0 auto; 
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 40px; 
+    color: white;
+    font-size: 3vh;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.consulta{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.checks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.consulta input[type="radio"] {
+    margin-right: 10px;
+ }
+input[type="submit"] {
+    margin-top: 20px;
+}

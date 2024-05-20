@@ -1,0 +1,77 @@
+/* ============= Acerca del archivo ============= */
+/*
+>   Autores: integrantes del grupo 5 del curso Codo a Codo
+>   Versión: 1
+>   Fecha: 20-05-2024
+>   El siguiente código almacena los estilos que tendrá la página
+    productos.html
+*/
+
+/* ================ Imagen de fondo ================ */
+
+html{
+    background-image: url(../assets/images/logo_A.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-blend-mode: screen;
+}
+
+/* ============ Fin de Imagen de fondo ============ */
+
+h2 {
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    color: rgb(240, 171, 69);
+    text-align: center;
+    font-size: 7vh;
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px black;
+    text-shadow: 2px 2px rgb(150, 65, 65);
+}
+
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 60px;
+}
+
+.container_producto {
+    max-width: 300px;
+    display: inline-block;
+    background-color: rgba(180, 94, 8, 0.521);
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: bold;
+    font-weight: 700;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #ffa600,
+        0 0 20px #ffa600,
+        0 0 30px #ffa600;
+    text-shadow: 0 0 10px rgb(240, 240, 240);
+    text-align: center;
+    border: 5px solid rgba(16, 95, 197, 0.466);
+}
+
+.container_producto:hover {
+    scale: 1.1;
+}
+
+.container_producto img {
+    margin: 20px;
+    max-width: 200px;
+    width: auto;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.container_producto p {
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(187, 178, 178, 0.534);
+    border-radius: 30px;
+}

@@ -16,15 +16,15 @@ function Producto(nombre, caracteristicas, precio) {
     }
 
     this.obtenerNombre = function () {
-        document.write(`<p>Nombre: ${this.nombre}</p>`);
+        document.write(`<p>${this.nombre}</p>`);
     }
 
     this.obtenerCaracterísticas = function () {
-        document.write(`<p>Características: ${this.caracteristicas}</p>`);
+        document.write(`<p>${this.caracteristicas}</p>`);
     }
 
     this.obtenerPrecio = function () {
-        document.write(`<p>Precio del producto: ${this.precio} pesos</p>`);
+        document.write(`<p>$${this.precio}</p>`);
         document.write(`</div>`);
     }
 }

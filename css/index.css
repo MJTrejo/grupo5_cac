@@ -1,0 +1,83 @@
+/* ============= Acerca del archivo ============= */
+/*
+>   Autores: integrantes del grupo 5 del curso Codo a Codo
+>   Versión: 1
+>   Fecha: 20-05-2024
+>   El siguiente código almacena los estilos que tendrá la página
+    index.html
+*/
+
+/* ================ Imagen de fondo ================ */
+
+html{
+    background-image: url(../assets/images/fondovertorial.jpg);
+}
+
+/* ============ Fin de Imagen de fondo ============ */
+
+/* ================ Cajas principales ================ */
+
+.historia_marvel {
+    background-color: rgba(255, 0, 0, 0.55);
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 30px;
+    color: white;
+    font-size: 3vh;
+    border-radius: 30px;
+}
+
+.historia_marvel p {
+    line-height: 1.6;
+    color: rgb(208, 208, 208);
+}
+
+/* ============ Fin de cajas principales ============ */
+
+/* =============== Flex para imágenes =============== */
+
+.galeria_heroes {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 3vh;
+    border-radius: 30px;
+    gap: 15px;
+    justify-content: center;
+}
+
+.info_heroe {
+    border-radius: 5px;
+    background-color: rgb(47, 47, 47);
+    max-width: 240px;
+    padding: 10px;
+    box-shadow: 0 0 8px #320401;
+}
+
+.info_heroe img {
+    max-width: 200px;
+    flex: 1 1 calc(33% - 20px);
+    box-sizing: border-box;
+}
+
+.info_heroe p {
+    text-align: center;
+    color: rgb(208, 208, 208);
+}
+
+/* ============= Fin de flex para imágenes ============= */
+
+/* ================== Estilos para h2 ================== */
+
+.historia_marvel h2, .galeria_heroes h2 {
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 3vh;
+    text-shadow: none;
+}
+
+/* =============== Fin de estilos para h2 =============== */
