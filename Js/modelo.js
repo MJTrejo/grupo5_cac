@@ -12,7 +12,7 @@ function Producto(nombre, caracteristicas, precio) {
 
     this.obtenerFoto = function () {
         document.write('<div class="container_producto">');
-        document.write(`<img src="../assets/images/${this.nombre.toLowerCase()}.png" alt="${this.nombre}">`);
+        document.write(`<img src="../assets/images/productos/${this.nombre.toLowerCase()}.jpg" alt="${this.nombre}">`);
     }
 
     this.obtenerNombre = function () {
