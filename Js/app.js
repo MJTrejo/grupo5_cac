@@ -42,6 +42,11 @@ lego.obtenerNombre();
 lego.obtenerCaracterísticas();
 lego.obtenerPrecio();
 
+wakanda.obtenerFoto();
+wakanda.obtenerNombre();
+wakanda.obtenerCaracterísticas();
+wakanda.obtenerPrecio();
+
 antman.obtenerFoto();
 antman.obtenerNombre();
 antman.obtenerCaracterísticas();

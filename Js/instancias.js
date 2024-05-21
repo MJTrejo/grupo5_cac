@@ -14,5 +14,6 @@ const auto = new Producto("Auto", "Edicion Spiderman", 34.565);
 const moto = new Producto("Moto", "Edicion Ghost Rider", 43.075);
 const camisa = new Producto("Camisa", "Edicion Limitada", 48.095);
 const lego = new Producto("Lego", "Edicion Thor Love And Thunder", 55.555);
+const wakanda = new Producto("Wakanda", "Edicion Especial", 60.655);
 const antman = new Producto("Antman", "Edicion Quantumania", 65.555);
 const hulk = new Producto("Hulk", "Edicion Hulk", 75.555);
