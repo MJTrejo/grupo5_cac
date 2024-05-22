@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 1
->   Fecha: 20-05-2024
+>   Versión: 2
+>   Fecha: 22-05-2024
 >   El siguiente código almacena los estilos que tendrá la página
     productos.html
 */
@@ -18,60 +18,147 @@ html{
 
 /* ============ Fin de Imagen de fondo ============ */
 
-h2 {
-    margin-top: 6vh;
-    margin-bottom: 4vh;
+.main h2 {
     color: rgb(240, 171, 69);
     text-align: center;
-    font-size: 7vh;
+    font-size: 9vh;
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
     border: 1px black;
     text-shadow: 2px 2px rgb(150, 65, 65);
 }
 
+/*  
+Caja para almacenar los productos,
+fundamental para que su distribución se adapte
+al tamaño de las pantallas
+*/
 .catalogo{
     display: flex;
     flex-wrap: wrap;
+    max-width: 850px;
     justify-content: center;
+    margin: 0 auto;
     padding: 30px;
-    gap: 60px;
+    gap: 40px;
+    background-color: rgba(255, 0, 0, 0.55);
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    border-radius: 30px;
 }
 
+/* ============ Recuadro para productos ============ */
+
+/* Ajustes generales */
 .container_producto {
-    max-width: 300px;
+    max-width: 240px;
     display: inline-block;
-    background-color: rgba(180, 94, 8, 0.521);
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(180, 94, 8);
     color: rgb(0, 0, 0);
     font-size: 20px;
     font-style: bold;
     font-weight: 700;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 0 10px #ffa600,
-        0 0 20px #ffa600,
-        0 0 30px #ffa600;
+    box-shadow: 0 0 10px #ffa600, 0 0 20px #ffa600;
     text-shadow: 0 0 10px rgb(240, 240, 240);
-    text-align: center;
+    text-align: center; /* Centrar horizontalmente */
     border: 5px solid rgba(16, 95, 197, 0.466);
+    transition: transform 0.3s ease;
 }
 
 .container_producto:hover {
-    scale: 1.1;
+    transform: scale(1.15);
 }
 
+/* Para la imagen del producto */
 .container_producto img {
-    margin: 20px;
+    margin-bottom: 10px;
     max-width: 200px;
     width: auto;
-    border-radius: 15px 15px 0 0;
-
+    border-radius: 20px;
 }
 
+/* Texto con detalles del producto */
 .container_producto p {
     margin: 0;
     padding: 10px;
     text-align: left;
-    background-color: rgba(187, 178, 178, 0.534);
-    border-radius: 30px;
+    background-color: rgba(178, 178, 178, 0.534);
 }
+
+.container_producto p:first-of-type {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container_producto p:last-of-type {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* Fin de texto con detalles */
+
+/* ======== Fin de recuadro para productos ======== */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .catalogo {
+        max-width: 400px;
+        padding: 30px;
+        gap: 30px;
+    }
+
+    .container_producto {
+        max-width: 80%;
+        font-size: 20px;
+    }
+
+    .container_producto img {
+        max-width: 100%;
+    }
+
+    .main h2 {
+        font-size: 7vh;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .catalogo {
+        max-width: 670px;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .container_producto {
+        max-width: 40%;
+        font-size: 18px;
+    }
+
+    .container_producto img {
+        max-width: 90%;
+    }
+
+    .main h2 {
+        font-size: 8vh;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+    .container_producto {
+        max-width: 25%;
+        font-size: 20px;
+    }
+
+    .container_producto img {
+        max-width: 90%;
+    }
+}
+
+/* ============ Fin de responsive ============ */

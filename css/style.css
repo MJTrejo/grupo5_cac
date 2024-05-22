@@ -49,6 +49,7 @@ html {
 .logo_titulo img {
     margin-left: 1vw;
     margin-right: 1vw;
+    height: 50px;
 }
 
 .logo_titulo h1 {
@@ -148,6 +149,112 @@ nav ul li:hover .submenu {
 
 .footer p {
     color: rgb(230, 230, 230);
+    font-size: 16px;
 }
 
 /* ============= Fin de footer ============= */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .header{
+        height: 12vh;
+    }
+
+    .logo_titulo img {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        max-height: 50px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+    
+    nav ul li {
+        flex: 1;
+        margin: 3px 3px;
+        position: relative;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 2.5vh;
+    }
+
+    .submenu {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+    .submenu li {
+        flex: 1;
+        margin: 3px 3px;
+        position: relative;
+    }
+
+    .submenu li a {
+        display: block;
+        padding: 3px 6px;
+        text-align: center;
+        font-size: 2.2vh;
+    }
+
+    .footer {
+        height: 8vh;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .header {
+        padding: 5px;
+        height: 10vh;
+    }
+
+    .main{
+        padding: 15px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+    
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+    .header {
+        padding: 5px;
+        height: 10vh;
+    }
+    
+    .main{
+        padding: 20px;
+    }
+
+    .footer p{
+        font-size: 100%;
+    }
+}
+
+/* ============ Fin de responsive ============ */

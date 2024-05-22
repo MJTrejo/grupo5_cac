@@ -15,14 +15,14 @@ html{
 
 /* ============ Fin de Imagen de fondo ============ */
 
-.main-info h2{
+.main h2{
     color: rgb(240, 240, 240); 
     text-align: center;
     margin-bottom: 3vh;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.main-info p{
+.main p{
     color: rgb(208, 208, 208);
     text-align: justify;
 }
