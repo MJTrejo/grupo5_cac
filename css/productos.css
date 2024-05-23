@@ -36,11 +36,11 @@ al tamaño de las pantallas
 .catalogo{
     display: flex;
     flex-wrap: wrap;
-    max-width: 850px;
+    max-width: 950px;
     justify-content: center;
     margin: 0 auto;
     padding: 30px;
-    gap: 40px;
+    gap: 50px;
     background-color: rgba(255, 0, 0, 0.55);
     margin-top: 3vh;
     margin-bottom: 3vh;
@@ -51,7 +51,7 @@ al tamaño de las pantallas
 
 /* Ajustes generales */
 .container_producto {
-    max-width: 240px;
+    max-width: 300px;
     display: inline-block;
     padding: 10px;
     justify-content: center;
@@ -77,7 +77,7 @@ al tamaño de las pantallas
 /* Para la imagen del producto */
 .container_producto img {
     margin-bottom: 10px;
-    max-width: 200px;
+    max-width: 30%;
     width: auto;
     border-radius: 20px;
 }
@@ -87,6 +87,7 @@ al tamaño de las pantallas
     margin: 0;
     padding: 10px;
     text-align: left;
+    font-size: 16px;
     background-color: rgba(178, 178, 178, 0.534);
 }
 
@@ -108,13 +109,13 @@ al tamaño de las pantallas
 /* Pantallas pequeñas */
 @media (max-width: 599px) {
     .catalogo {
-        max-width: 400px;
+        max-width: 550px;
         padding: 30px;
         gap: 30px;
     }
 
     .container_producto {
-        max-width: 80%;
+        max-width: 85%;
         font-size: 20px;
     }
 
@@ -122,30 +123,38 @@ al tamaño de las pantallas
         max-width: 100%;
     }
 
+    .container_producto p {
+        font-size: 4vw;
+    }
+
     .main h2 {
-        font-size: 7vh;
+        font-size: 8vh;
     }
 }
 
 /* Pantallas medianas */
 @media (min-width: 600px) and (max-width: 899px) {
     .catalogo {
-        max-width: 670px;
+        max-width: 700px;
         padding: 25px;
-        gap: 25px;
+        gap: 40px;
     }
 
     .container_producto {
-        max-width: 40%;
+        max-width: 45%;
         font-size: 18px;
     }
 
     .container_producto img {
-        max-width: 90%;
+        max-width: 100%;
+    }
+
+    .container_producto p {
+        font-size: 18px;
     }
 
     .main h2 {
-        font-size: 8vh;
+        font-size: 9vh;
     }
 }
 
@@ -158,6 +167,11 @@ al tamaño de las pantallas
 
     .container_producto img {
         max-width: 90%;
+    }
+
+    
+    .main h2 {
+        font-size: 10vh;
     }
 }
 
