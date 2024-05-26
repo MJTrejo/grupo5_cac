@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 1
->   Fecha: 20-05-2024
+>   Versión: 2
+>   Fecha: 25-05-2024
 >   El siguiente código almacena los estilos que tendrá la página
     index.html
 */
@@ -26,13 +26,13 @@ html{
     margin-bottom: 3vh;
     padding: 30px;
     color: white;
-    font-size: 3vh;
     border-radius: 30px;
 }
 
 .historia_marvel p {
     line-height: 1.6;
     color: rgb(208, 208, 208);
+    font-size: 1em;
 }
 
 /* ============ Fin de cajas principales ============ */
@@ -59,8 +59,6 @@ html{
 
 .info_heroe img {
     max-width: 200px;
-    flex: 1 1 calc(33% - 20px);
-    box-sizing: border-box;
 }
 
 .info_heroe p {
@@ -72,12 +70,111 @@ html{
 
 /* ================== Estilos para h2 ================== */
 
-.historia_marvel h2, .galeria_heroes h2 {
+.historia_marvel h2 {
     text-align: center;
     color: rgb(240, 240, 240);
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 3vh;
-    text-shadow: none;
 }
 
 /* =============== Fin de estilos para h2 =============== */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .historia_marvel {
+        max-width: 90%;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .historia_marvel h2 {
+        font-size: 3.7vh;
+    }
+
+    .historia_marvel p {
+        font-size: 14px;
+    }
+    
+    .info_heroe {
+        max-width: 85%;
+        padding: 10px;
+    }
+    
+    .info_heroe img {
+        max-width: 100%;
+    }
+
+    .info_heroe p {
+        font-size: 20px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .historia_marvel {
+        max-width: 85%;
+        margin-top: 2.7vh;
+        margin-bottom: 2.7vh;
+        padding: 25px;
+        font-size: 16px;
+    }
+
+    .historia_marvel h2 {
+        font-size: 4.8vh;
+    }
+
+    .historia_marvel p {
+        font-size: 16px;
+    }
+    
+    .info_heroe {
+        max-width: 40%;
+        padding: 10px;
+    }
+    
+    .info_heroe img {
+        max-width: 100%;
+    }
+    
+    .info_heroe p {
+        font-size: 20px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+    .historia_marvel {
+        max-width: 900px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding: 30px;
+        font-size: 18px;
+    }
+
+    .historia_marvel h2 {
+        font-size: 5.5vh;
+    }
+
+    .historia_marvel p {
+        font-size: 18px;
+    }
+
+    .info_heroe {
+        max-width: 30%;
+        padding: 10px;
+    }
+    
+    .info_heroe img {
+        max-width: 100%;
+    }
+
+    .info_heroe p {
+        font-size: 18px;
+    }
+}
+
+/* ============ Fin de responsive ============ */

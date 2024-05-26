@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 2
->   Fecha: 22-05-2024
+>   Versión: 2.1
+>   Fecha: 25-05-2024
 >   El siguiente código almacena los estilos generales que tendrán las
     páginas del documento; concretamente, contiene la configuración
     general de las mismas, el header con sus botones de navegación,
@@ -150,7 +150,6 @@ nav ul li:hover .submenu {
 
 .footer p {
     color: rgb(230, 230, 230);
-    font-size: 16px;
 }
 
 /* ============= Fin de footer ============= */
@@ -217,12 +216,16 @@ nav ul li:hover .submenu {
         font-size: 2.2vh;
     }
 
+    .main{
+        padding: 10px;
+    }
+
     .footer {
         height: 8vh;
     }
 
     .footer p {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
@@ -234,10 +237,11 @@ nav ul li:hover .submenu {
     }
 
     .main{
-        padding: 25px;
+        padding: 20px;
     }
+
     .footer p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -253,7 +257,7 @@ nav ul li:hover .submenu {
     }
 
     .footer p{
-        font-size: 100%;
+        font-size: 18px;
     }
 }
 
