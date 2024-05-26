@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 2
->   Fecha: 22-05-2024
+>   Versión: 3
+>   Fecha: 26-05-2024
 >   El siguiente código almacena los estilos que tendrá la página
     info.html
 */
@@ -15,17 +15,7 @@ html{
 
 /* ============ Fin de Imagen de fondo ============ */
 
-.main h2{
-    color: rgb(240, 240, 240); 
-    text-align: center;
-    margin-bottom: 3vh;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.main p{
-    color: rgb(208, 208, 208);
-    text-align: justify;
-}
+/* ================ Cajas principales ================ */
 
 .sobre-nos {
     background-color: rgba(255, 0, 0, 0.55);
@@ -37,24 +27,44 @@ html{
     color: white;
     font-size: 3vh;
     border-radius: 30px;
-    overflow: hidden;
 }
 
+.sobre-nos h2{
+    color: rgb(240, 240, 240); 
+    text-align: center;
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sobre-nos p{
+    color: rgb(208, 208, 208);
+    text-align: justify;
+}
+
+/* Para acomodar las tarjetas con información */
 .quienes-somos {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
+
+/* ============ Fin de cajas principales ============ */
+
+/* ================== Tarjetas ================== */
 
 .card {
     width: 280px;
     height: 410px;
-    background: #940808b7;
+    background: #540202b7;
     border-radius: 30px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    margin-right: 20px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -109,7 +119,7 @@ html{
     z-index: 2;
     top: 80%;
     background: rgba(255, 166, 0, 0.568);
-    color: #d80b0b;
+    color: rgb(228, 228, 228);
     border-radius: 25px;
     overflow: hidden;
     transition: .3s .2s;
@@ -137,13 +147,12 @@ html{
 
 .contenido h2 {
     margin-left: 100px;
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
     line-height: 30px;
 }
 
 .contenido .tag {
-    margin-left: 100px;
     font-size: 0.7em;
     letter-spacing: 2px;
     font-weight: 200;
@@ -191,3 +200,66 @@ html{
     color: #fff;
     transition: all .4s;
 }
+
+/* ============= Fin de tarjetas ============= */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .sobre-nos {
+        max-width: 90%;
+        margin-top: 2.5vh;
+        margin-bottom: 2.5vh;
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 3.7vh;
+    }
+
+    .sobre-nos p {
+        font-size: 16px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .sobre-nos {
+        max-width: 85%;
+        margin-top: 2.7vh;
+        margin-bottom: 2.7vh;
+        padding: 25px;
+        font-size: 18px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 4.8vh;
+    }
+
+    .sobre-nos p {
+        font-size: 18px;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+    .sobre-nos {
+        max-width: 900px;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .sobre-nos h2 {
+        font-size: 5.5vh;
+    }
+
+    .sobre-nos p {
+        font-size: 20px;
+    }
+}
+
+/* ============ Fin de responsive ============ */
