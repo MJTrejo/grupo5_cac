@@ -12,10 +12,11 @@ function validarCampos(){
     var apellido = document.getElementById('apellido').value;
     var email = document.getElementById('email').value;
     var telefono = document.getElementById('telefono').value;
+    var detalles = document.getElementById('detalles').value;
     // Operador ternario que verifica si el teléfono tiene 10 caracteres
     var esValido = telefono.length === 10 ? true : false;
 
-    if (!nombre || !apellido || !email || !telefono) {
+    if (!nombre || !apellido || !email || !telefono || !detalles) {
         
         alert('Por favor, completa todos los campos.');
     }else if (!esValido) {

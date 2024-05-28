@@ -1,8 +1,8 @@
 <!-- Acerca del archivo -->
 <!--
 >   Autora: Karina Serrano
->   Versión: 5
->   Fecha: 20-05-2024
+>   Versión: 6
+>   Fecha: 28-05-2024
 >   El siguiente código representa un formulario de contacto, con 5 campos para
     llenar, y con una validación para hacerlos obligatorios, hecha con Javascript
 -->
@@ -41,25 +41,36 @@
     </header>
 
     <main class="main">
+        <h2>CONTÁCTESE<br>CON NOSOTROS</h2>
         <form action="#" method="post" onsubmit="return validarCampos(); ">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" ><br>
-            <label for="apellido">Apellido:</label><br>
-            <input type="text" id="apellido" name="apellido" ><br>
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" ><br>
-            <label for="telefono" >Teléfono:</label><br>
-            <input type="tel" id="telefono" name="telefono" ><br>
-            <div class="consulta">
-                <h5>Tipo de consulta</h5><br>
-                <div class="checks">
-                    <div><input type="radio" name="consulta" value="consulta">Consulta</div>
-                    <div><input type="radio" name="consulta" value="compra" checked>Compra</div>
-                </div>               
+            <h2>Por favor, complete<br>todos los campos</h2>
+            <div class="form_container">
+                <div class="izquierda">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre"><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Introduzca su e-mail"><br>
+                    <label for="telefono" >Teléfono:</label><br>
+                    <input type="tel" id="telefono" name="telefono" placeholder="0000000000"><br>
+                    <div class="consulta">
+                        <h5>Tipo de consulta:</h5><br>
+                        <div class="checks">
+                            <div><input type="radio" name="consulta" value="consulta">Preguntas generales</div>
+                            <div><input type="radio" name="consulta" value="compra" checked>Realizar una compra</div>
+                        </div>               
+                    </div>
+                </div>
+                <div class="derecha">
+                    <label for="detalles">Detalles:</label><br>
+                    <textarea id="detalles" name="detalles" rows="10" cols="50" maxlength="1000"
+                    placeholder="Detállenos su consulta..."></textarea><br>
+                    <input type="submit" value="Enviar" class="enviar"><br>
+                </div>
             </div>
-            <input type="submit" value="Enviar"><br>
-          </form>
-          <script src="../js/validar.js"></script>
+        </form>
+        <script src="../js/validar.js"></script>
     </main>
 
     <footer class="footer">

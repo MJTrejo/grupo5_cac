@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 1
->   Fecha: 20-05-2024
+>   Versión: 2
+>   Fecha: 28-05-2024
 >   El siguiente código almacena los estilos que tendrá la página
     contacto.html
 */
@@ -14,6 +14,23 @@ html{
 }
 
 /* ============ Fin de Imagen de fondo ============ */
+
+/* ==================== Título ==================== */
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 3vh;
+    font-size: 7.5vh;
+    color: rgb(240, 171, 69);
+    text-decoration: underline;
+    border: 1px black;
+    text-shadow: 2px 2px rgb(150, 65, 65);
+}
+
+/* ================ Fin de título ================ */
+
+/* ================ Formulario ================ */
 
 form{
     background-color: rgba(255, 0, 0, 0.55);
@@ -27,6 +44,38 @@ form{
     font-size: 3vh;
     border-radius: 30px;
     overflow: hidden;
+}
+
+form h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 4vh;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: none;
+    text-shadow: none;
+}
+
+.form_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Para separar en columnas los recuadros */
+.izquierda, .derecha {
+    flex: 1;
+    padding: 10px;
+}
+
+.izquierda {
+    max-width: 50%;
+}
+
+.derecha {
+    max-width: 50%;
 }
 
 .consulta{
@@ -43,7 +92,63 @@ form{
 
 .consulta input[type="radio"] {
     margin-right: 10px;
- }
+}
+
+/* Para el botón de enviar */
 input[type="submit"] {
     margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #eeeeee;
+    font-size: 16px;
+    background-color: rgb(180, 27, 27);
 }
+
+input[type="submit"]:hover {
+    background-color: rgb(189, 77, 12);
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 20px); /* Ajustar para el padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* ============= Fin de formulario ============= */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .form_container {
+        flex-direction: column;
+    }
+    
+    .izquierda {
+        max-width: 100%;
+    }
+    
+    .derecha {
+        max-width: 100%;
+    }
+
+    input[type="submit"] {
+        font-size: 30px;
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+}
+
+/* ============ Fin de responsive ============ */
