@@ -21,7 +21,6 @@ h2{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     margin: 3vh;
-    font-size: 7.5vh;
     color: rgb(240, 171, 69);
     text-decoration: underline;
     border: 1px black;
@@ -50,7 +49,6 @@ form h2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
-    font-size: 4vh;
     color: rgb(255, 255, 255);
     text-decoration: none;
     border: none;
@@ -83,6 +81,7 @@ form h2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: left;
 }
 .checks{
     display: flex;
@@ -126,8 +125,22 @@ textarea {
 
 /* Pantallas pequeñas */
 @media (max-width: 599px) {
+    h2{
+        font-size: 5vh;
+        margin: 2vh;
+    }
+    
+    form {
+        max-width: 85%;
+    }
+
+    form h2{
+        font-size: 3vh;
+    }
+    
     .form_container {
         flex-direction: column;
+        max-width: 100%;
     }
     
     .izquierda {
@@ -145,10 +158,37 @@ textarea {
 
 /* Pantallas medianas */
 @media (min-width: 600px) and (max-width: 899px) {
+    h2{
+        font-size: 6.5vh;
+        margin: 2.5vh;
+    }
+    
+    form {
+        max-width: 90%;
+    }
+
+    form h2{
+        font-size: 4vh;
+    }
+
+    input[type="submit"] {
+        font-size: 24px;
+    }
 }
 
 /* Pantallas grandes */
 @media (min-width: 900px) {
+    h2 {
+        font-size: 7.5vh;
+    }
+
+    form h2 {
+        font-size: 5vh;
+    }
+
+    input[type="submit"] {
+        font-size: 20px;
+    }
 }
 
 /* ============ Fin de responsive ============ */
