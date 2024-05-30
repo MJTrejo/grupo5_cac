@@ -1,6 +1,6 @@
 /**
  * autor/a: salgado Gustavo
- * version: 1.0
+ * version: 1.0 (final)
  * fecha: 11/05/2024
  * El siguiente script spp.js llama a los Productos
  */

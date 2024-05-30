@@ -1,7 +1,7 @@
 // Acerca del archivo
 /*
 >   Autora: Karina Serrano
->   Versión: 1
+>   Versión: 1 (final)
 >   Fecha: 15-05-2024
 >   El siguiente código contiene una función para validar los campos del
     formulario en contacto.html (no permitir que estos estén vacíos)

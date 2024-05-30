@@ -1,6 +1,6 @@
 /**
  * autor/a: Gustavo salgado     
- * version: 1.0
+ * version: 1.0 (final)
  * fecha: 11/05/2024
  */
 

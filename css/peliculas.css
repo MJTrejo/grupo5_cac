@@ -1,8 +1,8 @@
 /* ============= Acerca del archivo ============= */
 /*
 >   Autores: integrantes del grupo 5 del curso Codo a Codo
->   Versión: 1
->   Fecha: 20-05-2024
+>   Versión: 2 (final)
+>   Fecha: 30-05-2024
 >   El siguiente código almacena los estilos que tendrá la página
     peliculas.html
 */
@@ -16,7 +16,9 @@ html{
     background-blend-mode: screen;
 }
 
-/* ============ Fin de Imagen de fondo ============ */
+/* ============ Fin de imagen de fondo ============ */
+
+/* ================ Imagen de título ================ */
 
 .logo_marvel1 {
     margin-top: 30px;
@@ -28,31 +30,36 @@ html{
 }
 
 .logo_marvel2 img {
-    max-width: 100%;
+    width: 750px;
     height: auto;
-    
 }
+
+/* ============ Fin de imagen de título ============ */
+
+/* ================ Textos y otros ================ */
 
 .h2_peliculas {
     margin: 0;
-    padding: 0;
-    color: rgba(245, 90, 18, 0.815);
+    padding: 10px;
+    color: rgba(244, 244, 244, 0.815);
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     text-decoration: none;
     text-shadow: none;
     border-radius: 20px;
     background-color: rgba(170, 69, 69, 0.479);
-
+    text-align: center;
 }
+
+/* ============= Fin de textos y otros ============= */
+
+/* ============ Contenedores de películas ============ */
 
 .descri_container {
     color: rgba(240, 240, 240, 0.712);
     display: flex;
     align-items: flex-start;
     overflow: hidden;
-
-
 }
 
 .descri_container p {
@@ -61,19 +68,6 @@ html{
     margin-left: 10px;
     font-weight: bold;
 
-}
-
-.peli_titulo {
-    background-color: #a83737dc;
-    color: rgb(207, 210, 219);
-    margin: 20px;
-    justify-content: center;
-    font-size: 4vh;
-    font-weight: bold;
-    border: 1px solid #eceae6;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px #ad062a3a;
-    overflow: hidden;
 }
 
 .peli-container {
@@ -96,6 +90,7 @@ html{
     animation: move 4s linear infinite;
 }
 
+/* Animación de las cajas de películas */
 @keyframes move {
     0% {
         top: 0;
@@ -127,8 +122,8 @@ html{
 }
 
 .peli-cont:hover {
-    scale: 1.2;
-    animation: normal;
+    background-color: rgb(189, 77, 12);
+    cursor: pointer;
 }
 
 .peli-cont img {
@@ -140,6 +135,8 @@ html{
 .peli-cont h3 {
     margin-top: 10px;
 }
+
+/* Para los tráilers */
 
 #trailer-container {
     display: none;
@@ -170,3 +167,115 @@ html{
     padding: 5px 10px;
     cursor: pointer;
 }
+
+/* ======== Fin de contenedores de películas ======== */
+
+/* ================ Responsive ================ */
+
+/* Pantallas pequeñas */
+@media (max-width: 599px) {
+    .h2_peliculas {
+        font-size: 2.5vh;
+    }
+
+    .logo_marvel1 {
+        height: 20vh;
+    }
+
+    .logo_marvel2 img {
+        max-width: 90%;
+    }
+
+    .descri_container {
+        flex-direction: column; /* Asegura que los elementos se apilen en columna */
+        align-items: center; /* Alinea los elementos al centro */
+    }
+
+    .descri_container p {
+        font-size: 3vh; /* Ajusta el tamaño de la fuente */
+        margin-left: 0; /* Centra el texto */
+    }
+
+    .peli-cont {
+        max-width: 100%;
+        margin: 10px;
+        box-shadow: 5px 5px 5px #8f0202be; /* Ajusta la sombra */
+    }
+
+    @keyframes move {
+        0% {
+            top: 0;
+            left: 0;
+        }
+    
+        25% {
+            top: 0;
+            left: 10%;
+            transform: translateX(2%);
+        }
+    
+        50% {
+            bottom: 25%;
+            left: 10%;
+            transform: translate(2%, 2%);
+        }
+    
+        75% {
+            bottom: 25%;
+            left: 0;
+            transform: translateY(2%);
+        }
+    
+        100% {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 899px) {
+    .h2_peliculas {
+        font-size: 3.5vh;
+    }
+
+
+    .logo_marvel1 {
+        height: 22vh;
+    }
+
+    .logo_marvel2 img {
+        max-width: 90%;
+    }
+
+    .descri_container p {
+        font-size: 3.5vh;
+    }
+
+    .peli-cont {
+        width: 180px;
+        margin: 15px;
+        box-shadow: 7px 7px 7px #8f0202be;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 900px) {
+    .h2_peliculas {
+        font-size: 4.2vh;
+    }
+
+    .logo_marvel1 {
+        height: 25vh;
+    }
+
+    .logo_marvel2 img {
+        max-width: 750px;
+    }
+
+    .descri_container p {
+        font-size: 4vh;
+    }
+}
+
+/* ============ Fin de responsive ============ */

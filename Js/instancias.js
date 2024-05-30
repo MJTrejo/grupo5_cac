@@ -1,6 +1,6 @@
 /**
  * Autor/a: Gustavo Salgado
- * Version: 2
+ * Version: 2 (final)
  * Fecha: 20/05/2024
  * El siguiente script instancias.js y genera a los personajes particulares 
  * en el archivo instancias.js
